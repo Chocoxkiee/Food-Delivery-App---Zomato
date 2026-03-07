@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App - Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Righteous&display=swap" rel="stylesheet">
+    
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+.bg{
+    position: absolute;
+    justify-content: center;
+    background-image: linear-gradient(to right, red , rgba(246, 124, 124, 0.995));
+    width: 100%;
+    height: 50%;
+}
+
+#zom{
+    position: relative;
+    font-size: 4em;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    top: 40%;
+    left: 39%;
+    width: fit-content;
+}
+
+        header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        header ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li{
+            position: relative;
+            list-style: none;
+            margin-left: 40px;
+            padding: 13px;
+            font-size: 1.25em;
+            left: 20%;
+            top: 15px;  
+        }
+
+        header ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 6px 15px;
+            font-family: 'Righteous', cursive;
+        }
+        .active{
+            color: rgb(255, 149, 0);
+            border-radius: 20px;
+        }
+
+        header ul li a:hover{
+            color: rgb(255, 149, 0);
+            transition: 350ms;
+        }
+
+        .burgers{
+            left: 25%;
+            position: absolute;
+            width: auto;
+            top: 60%;
+            
+        }
+
+        .burgers h3{
+            position: relative;
+            display: flex;
+            color: #2c2b2c;
+            font-size: 4em;
+            top: 75%;
+            left: 50%;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .item1{
+        border-radius: 20px;
+        position:absolute;
+        width: 25%;
+        height: 45%;
+        left: 12%;
+        top: 80%;
+        }
+
+        .item1 img{
+            width: 80%;
+            height: 80%;
+        }
+
+        .item1 h3{
+            FONT-WEIGHT: 200;
+            font-size: 2em;
+            position: absolute;
+            font-family: 'Righteous', cursive;
+            display: flex;
+            left: 13%;
+        }
+        .cost
+        {
+            color:red;
+            font-size: 1.5em;
+            position: absolute;
+        }
+        #cost1{
+            top: 95%;
+            font-size: 1.5em;
+            left: 27%;
+        }
+        .item2{
+        border-radius: 20px;
+        position:absolute;
+        width: 25%;
+        height: 45%;
+        left: 41%;
+        top: 80%;
+        }
+
+        .item2 img{
+            width: 80%;
+            height: 80%;
+        }
+
+        .item2 h3{
+            FONT-WEIGHT: 200;
+            font-size: 2em;
+            position: absolute;
+            font-family: 'Righteous', cursive;
+            display: flex;
+            left: 13%;
+        }
+
+        .item3{
+        border-radius: 20px;
+        position:absolute;
+        width: 25%;
+        height: 45%;
+        left: 70%;
+        top: 80%;
+        }
+        #info{
+            font-size: 1em;
+            font-family: 'Raleway', sans-serif;
+            position: absolute;
+            top: 107%;
+            left: 5%;
+            width: 69%;
+
+        }
+        .item3 img{
+            width: 80%;
+            height: 80%;
+        }
+
+        .item3 h3{
+            FONT-WEIGHT: 200;
+            font-size: 2em;
+            position: absolute;
+            font-family: 'Righteous', cursive;
+            display: flex;
+            left: 13%;
+        }
+
+        .combos{
+            left: 33%;
+            position: absolute;
+            width: auto;
+            top: 150%;
+            
+              }
+
+        .combos h3{
+            position: relative;
+            display: flex;
+            color: #2c2b2c;
+            font-size: 4em;
+            left: 0%;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .combo1{
+            border-radius: 20px;
+            position: absolute;
+            width: 25%;
+            height: 45%;
+            left: 9%;
+            top: 170%;
+        }
+
+        .combo1 img{
+            width: 80%;
+            height: 80%;
+        }
+
+        .combo1 h3{
+            FONT-WEIGHT: 200;
+            font-size: 2em;
+            position: absolute;
+            width: 95%;
+            font-family: 'Righteous', cursive;
+            display: flex;
+            left: -5%;
+        }
+        .costcombo
+        {
+            color:red;
+            font-size: 1.5em;
+            position: absolute;
+        }
+        #costcombo1{
+            top: 107%;
+            font-size: 1.5em;
+            left: 30%;
+        }
+        #infocombo{
+            font-size: 1em;
+            font-family: 'Raleway', sans-serif;
+            position: absolute;
+            top: 120%;
+            left: -9%;
+            width: 104%;
+        }
+        .combo2{
+            border-radius: 20px;
+            position: absolute;
+            width: 25%;
+            height: 45%;
+            left: 40%;
+            top: 170%;
+        }
+
+        .combo2 img{
+            width: 80%;
+            height: 80%;
+        }
+
+        .combo2 h3{
+            FONT-WEIGHT: 200;
+            font-size: 2em;
+            position: absolute;
+            width: 87%;
+            font-family: 'Righteous', cursive;
+            display: flex;
+            left: 7%;
+            top: 90%;
+        }
+        #boorgir{
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 30%;
+            left: 30%;
+            z-index: 2;
+        }
+        #fries{
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            top: 30%;
+            left: -20%;
+            z-index: 1;
+        }
+        .combo3{
+            border-radius: 20px;
+            position: absolute;
+            width: 23%;
+            height: auto;
+            left: 68%;
+            top: 170%;
+        }
+
+        .combo3 img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .combo3 h3{
+            FONT-WEIGHT: 200;
+            font-size: 2em;
+            position: absolute;
+            width: 60%;
+            font-family: 'Righteous', cursive;
+            display: flex;
+            left: 24%;
+            top: 84%;
+        }
+
+        #infocombo3{
+            font-size: 1em;
+            font-family: 'Raleway', sans-serif;
+            position: absolute;
+            top: 112%;
+            left: 12%;
+            width: 100%;
+            padding-bottom: 20px;
+        }      
+        #costcombo3{
+            top: 99.8%;
+    font-size: 1.5em;
+    left: 39%;
+        }     
+       
+
+
+.search-local {
+	width: 100%;
+    max-width: 60rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    padding-left: 2rem;
+    background: #fff;
+    border-radius: 4rem;
+    min-height: 2rem;
+    height: 15%;
+    border: 0.1rem solid #000;
+    border-right: none;
+    top: 75%;
+    left: 18%;
+}
+
+.search-local input {
+	height: 100%;
+	width: 100%;
+	flex: 1 1 25rem;
+	background: #fff;
+	display: flex;
+	outline: none;
+	border: none;
+	color:#000;
+	font-size: 2rem;
+}
+
+input[type="text"]::placeholder {
+	color: #2c2b2c;
+	font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.search-local button {
+	background: rgb(243, 38, 38);
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    font-weight: 500;
+    font-size: 2.4rem;
+    height: 3.2rem;
+    width: 12.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+button a {
+	color: #fff;
+}
+
+.search-local button .search-icon {
+	display: none;
+}
+
+.search-local button:hover {
+	letter-spacing: 0.5rem;
+}
+#search{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+        
+</style>
+</head>
+<body>
+    <div class="bg"> 
+        <header>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="active" href="menu.html">MENU</a></li>
+                <li><a href="offers.html">OFFERS</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="LOGIN.html">LOGIN</a></li>
+                <li><a href="payment.html">PAYMENT</a></li>
+            </ul>
+        </header>
+        <h1 id="center" id="zom">Z o m a t o</h1>
+        <div class="search-local">
+            <input type="text" placeholder="Location">
+            <button>
+                <a id="search" href="#">Search</a>
+                <ion-icon name="search-outline" class="search-icon"></ion-icon>
+            </button>
+        </div>
+</div>
+<div class="burgers">
+        <h3 id="center">Burger Mania</h3>
+        </div>
+<div class="item1"><img src="images/cheeseburger.png"> <h3 id="center">Cheeseburger</h3><h3 id="cost1" class="cost" id="center">Rs 69/-</h3><H3 id="center" id="info">Classic Veg burger with Patty, Cheese and Mayo</H3></div>
+<div class="item2"><img src="images/veggie.png" alt="hot burger king hd png @transparentpng.com"> <h3 id="center">Veggie Burger</h3><h3 id="cost1" class="cost" id="center">Rs 99/-</h3><H3 id="center" id="info">An Explosion of taste with Lettuce, Onion, and our Signature Sauce</H3></div>
+<div class="item3"><img src="images/DOUBLE.png" alt="hot burger king hd png @transparentpng.com"> <h3 id="center">Double Decker</h3><h3 id="cost1" class="cost" id="center">Rs 129/-</h3><H3 id="center" id="info">Other Burgers too Small? Let's see If this one fits in your mouth</H3></div>
+
+<div class="combos">
+    <h3 id="center">Combos and Sides</h3>
+    </div>
+<div class="combo1"><img src="images/combo1.png"><h3 id="center">Kuch Bhi Chalega Combo</h3><h3 id="costcombo1" class="costcombo" id="center">Rs 209/-</h3><H3 id="center" id="infocombo">Indulge in Everything you will ever need with a Burger. Fries And Cold drink with our Signature Double Decker</H3></div>
+<div class="combo2"><img src="images/fries.png" id="fries"><img src="images/veggie.png" id="boorgir"><h3 id="center">The BFFs Combo</h3><h3 id="costcombo1" class="costcombo" id="center">Rs 159/-</h3><H3 id="center" id="infocombo">What can be a better example of BFFs except Burger and Fries?</H3></div>
+<div class="combo3"><img src="images/fries.png"><h3 id="center">French Fries</h3><h3 id="costcombo3" class="costcombo" id="center">Rs 69/-</h3><H3 id="center" id="infocombo3">The Great, The OG FRENCH FRIES. <br> Available in 3 options, <br>Salted, Peri Peri, Cheesy</H3></div>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Delivery App - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+        /* TOP RED SECTION */
+        .bg{
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            background: linear-gradient(to right, red , rgba(246, 124, 124, 0.995));
+            color: white;
+            text-align: center;
+        }
+
+        header{
+            padding: 20px;
+        }
+
+        header ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        header ul li{
+            margin: 0 20px;
+        }
+
+        header ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        header ul li a:hover{
+            color: orange;
+        }
+
+        #zom{
+            font-size: 50px;
+            margin-top: 60px;
+        }
+
+        #subtext{
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+        /* CONTENT SECTION */
+        .content-wrapper{
+            position: relative;
+            width: 100%;
+            height: 50vh;
+        }
+
+        #bg-left{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #bg-right{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-text{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .menu-button{
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180px;
+            height: 60px;
+            border: 2px solid #333;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .menu-button img{
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .menu-button:hover{
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="bg">
+    <header>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="offers.html">OFFERS</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="payment.html">PAYMENT</a></li>
+        </ul>
+    </header>
+
+    <h1 id="zom">Z O M A T O</h1>
+    <h2 id="subtext">The #1 Food Delivery App all over INDIA!</h2>
+</section>
+
+<section class="content-wrapper">
+
+    <!-- BACKGROUND IMAGES -->
+    <img src="images/bg.jpg" id="bg" alt="Food image">
+
+    <div class="content-text">
+        Good Food, Great Offers!
+    </div>
+
+    <a href="menu.html" class="menu-button">
+        <img src="images/menu.png" alt="Menu icon">
+        Menu
+    </a>
+
+</section>
+
+</body>
+</html>
